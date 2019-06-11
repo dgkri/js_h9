@@ -1,0 +1,380 @@
+body {
+    text-align: center;
+    background-color: #acb7ae;
+    margin: 0px;
+}
+
+/* login and signup form begins -------------------------------------------------------------------- */
+
+form {
+    background-color: aliceblue;
+    margin: 100px auto;
+    font-size: 16px;
+    text-align: left;
+    padding: 10px;
+    border: 2px solid grey;
+    border-radius: 8px;
+}
+
+#first_form{
+    display: block;
+    
+    width: 300px;
+    
+}
+
+#sign_up_form{
+    display: none;
+    width: 400px;
+}
+
+#sign_back, #signin{
+    width: 60px;
+}
+#sign_back{
+    margin-left: 50px;
+}
+
+form h1 , form p {
+    text-align: center;
+}
+
+form input{
+    margin: 3px 0px;
+}
+
+form button{
+    margin-left: 60px;
+}
+
+#login , #signin{
+    
+    margin-top: 20px;
+}
+
+hr{
+    margin-bottom: 20px;
+}
+
+/* login and signup forms end --------------------------------------------------------------------- */
+
+/*===================================================================================================*/
+/* dashboard Started */
+/* The top bar(Header bar)  */
+#headerBar {
+    display: none;
+    justify-content: space-between;
+    padding-left: 45%;
+    padding-top: 4px;
+    padding-right: 10px;
+    padding-bottom: 4px;
+    background-color: gray;
+    height: 29px;
+    font-size: 20px;
+    border-radius: 5px;
+    
+}
+
+/* the menue button in the top bar/header bar  */
+#headerBar div {
+    background-color: #acb7ae;
+    border-radius: 5px;
+    width: 80px;
+    text-align: center;
+    padding-top: 3px;
+
+}
+/* the dropdown menu and the hover functionality added */
+#headerBar div:hover #settingDropDwn{ display: block;}
+
+#settingDropDwn {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 80px;
+    padding: 15px 5px;
+}
+#settingDropDwn div:hover {
+    background-color: lightgray;
+}
+/* Header bar finished */
+/* --------------------------------------------------------------------------------------------------*/
+/* -------------------------------------------------------------------------------------------------- */
+/* Starting Dashboard section 1(taskHeadings) */
+
+#dashBoardSec {
+    display: none;
+    padding-top: 5px;
+    width: 70%;
+    margin-left: 15%;
+    height: 635px;
+    background-color: lightgray;
+    border-radius: 10px;
+
+}
+
+#taskHeadings{display: block;}
+
+/* the headern of dashboard */
+#taskHeadings > header{
+    text-align: left;
+    margin: 0px 10px;
+    background-color: #f5f5dc;
+    font-size: 20px;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+/* ol and lis in taskHeadings */
+#taskHeadings > ol > li {
+       
+    text-align: left;
+    font-size: 20px;
+    margin-top: 3px;
+    color: coral;
+}
+
+/* checkbox functionality  in li*/
+.ckbx {
+    display: none;
+}
+/* text input functionality */
+.txtInput{
+    display: none;
+    width: 95%;
+    height: 20px;
+    border-radius: 1px;
+}
+
+
+/* text input functionality in li */
+.textInput {
+    width: 95%;
+    height: 20px;
+}
+/* ------------------------------------------------------------------------------------------------ */
+/* buttons in the task headings */
+#taskHeadings > #foot1 {
+    display: block;
+    position: fixed;
+    top: 90%;
+    left: 65%;
+}
+
+#taskHeadings > #foot2 {
+    display: none;
+    position: fixed;
+    top: 90%;
+    left: 75%;
+}
+
+#taskHeadings > #foot3 {
+    display: none;
+    position: fixed;
+    top: 90%;
+    left: 65%;
+
+}
+
+#taskHeadings > footer > button {
+    font-size: 20px;
+    border: 2px solid gray;
+    margin: 0px 10px;
+    border-radius: 5px;
+    background-color: #acb7ae;
+}
+/* ---------------------------------------------------------------------------------------------- */
+
+/* Content adding bar */
+#dashBoardSec  #addCont {
+    display: none;
+    position: fixed;
+    top: 85%;
+    left: 16%;
+    width: 68%;
+    background-color: #acb7ae;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+#dashBoardSec  #addCont input {
+    width: 95%;
+    margin: 10px 10px;
+    height: 20px;
+    border-radius: 5px;
+}
+#dashBoardSec  #addCont > button {
+    margin: 0px 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+/* Finished dashboard section 1(Task Headings) */
+
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+
+/* Starting Dashboard section 2(Particular Task) */
+#particularTask {
+    display: none;
+}
+
+#particularTask > header {
+    text-align: left;
+    margin: 0px 10px;
+    background-color: #f5f5dc;
+    font-size: 20px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    color: coral;
+}
+
+#text_area {
+    display: none;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px dashed gray;
+    border-radius: 7px;
+    padding: 8px;
+    font-size: 20px;
+}
+
+#particularTask > ul > li {  
+    text-align: left;
+    font-size: 20px;
+    margin-top: 3px;
+    color: green;
+}
+
+#particularTask > #footP1 {
+    display: block;
+    position: fixed;
+    top: 90%;
+    left: 65%;
+
+}
+
+#particularTask > #footP2 {
+    display: none;
+    position: fixed;
+    top: 90%;
+    left: 75%;
+}
+
+#particularTask > footer > button {
+    font-size: 20px;
+    border: 2px solid gray;
+    margin: 0px 10px;
+    border-radius: 5px;
+    background-color: #acb7ae;
+}
+/* ending Dashboard section 2(Particular Task) */
+/* ------------------------------------------------------------------------------------------------ */
+
+/* starting Personal info form */
+
+#personal_info_sec{
+    display: none;
+}
+
+#edit_info {
+    display: none;
+    width: 400px;
+}
+
+#edit_info input[type='password'] {
+    width: 60px;
+}
+
+#info_back {
+    margin-left: 40px;
+}
+
+
+ /* personal info section */
+ #edit_section {
+    display: inline-block;
+    background-color: aliceblue;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 400px;
+    border: 2px solid grey;
+    border-radius:8px;
+
+    margin-top: 10%;
+
+}
+
+#edit_section > div {
+    padding: 10px 0px;
+}
+
+#edit_section > div > span {
+    background-color: antiquewhite;
+}
+
+.edit_div > button {
+    margin-left: 50px;
+    height: 25px;
+    width: 50px;
+    font-size: 15px;
+    border-width: 2px;
+    border-radius: 4px;
+}
+.edit_div > input {
+    height: 20px;
+    border-radius: 4px;
+    border-width: 2px;
+}
+
+.save_conf > button {
+    display: inline-flex;
+    margin-right: 50px;
+    height: 30px;
+    width: 60px;
+    font-size: 15px;
+    border-width: 2px;
+    border-radius: 4px;
+    border-color: lemonchiffon;
+}
+
+#confirm_section {
+    display: none;
+    text-align: left;
+    padding-left: 20px;
+    background-color: aliceblue;
+    width: 400px;
+    border: 2px solid grey;
+    border-radius: 8px;
+    margin-top: 10%;
+
+
+}
+
+#confirm_section > div {
+    margin: 20px 0px;
+}
+
+#confirm_section > div > button {
+    width: 70px;
+}
+
+#confirm_section > div > input {
+    height: 20px;
+    border-radius: 4px;
+    border-width: 2px;
+}
+
+#confirm_sec_comp {
+    color: red;
+}
+
+.save_conf {
+  display: none;
+}

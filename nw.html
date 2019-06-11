@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="nw.css">
+    <title>The to-do List</title>
+</head>
+<body>
+
+<!-- login section begins --------------------------------------------------------------------------->
+
+    <form id="first_form">
+        <h1>To-Do-List</h1>
+        <p>Manage your task and tame your lifes Chaos</p>
+        <p id="complaints_l"></p>
+        <hr>
+        Username: <br>
+        <input type="text" name="Username"><br>
+        Password: <br>
+        <input type="password" name="Password"><br>
+        <input type="submit" value="Log In" id="login">
+        <button id="signup">Sign Up</button>
+    </form>
+
+<!-- login section ends ------------------------------------------------------------------------------>
+
+<!-- signup section begins --------------------------------------------------------------------------->
+
+    <form id="sign_up_form">
+        <h1>To-Do-List</h1>
+        <p id="complaints_s"></p>
+        <hr>
+        First-Name: <br>
+        <input type="text" name="first-name"><br>
+        Last-name: <br>
+        <input type="text" name="last-name"><br>
+        Email-Id: <br>
+        <input type="text" name="email"><br>
+        Password: <br>
+        <input type="password" name="password"> <br>
+        <input type="submit" id="signin" value="Sign In">
+        <button id="sign_back">Back</button>
+    </form>
+
+<!-- signup section ends ----------------------------------------------------------------------------->
+
+
+<!-- dashboard part begins------------------------------------------------------------------------- -->
+
+    <!-- Header bar which conatin the Dropdown -->
+    <header id='headerBar'>
+        <span>My to-do list</span>
+        <div>Menu
+            <div id="settingDropDwn">
+                <div>Settings</div>
+                <div>Logout</div>
+            </div>
+        </div>
+
+    </header>
+    <!-- Header bar ended -->
+
+
+    <!-- Start of dashBoard section -->
+    <main id='dashBoardSec'>
+
+        <section id="taskHeadings">
+            <!-- Task Heading Section -->
+            <header>
+                Your Tasks:
+            </header>
+
+            <ol>
+                <!-- <li><span> hello </span><input type="checkbox" class="ckbx"><input type="text" class="txtInput"> </li> -->
+            </ol>
+
+            <footer id="foot1">
+                <button>+</button>
+                <button>Delete</button>
+                <button>Edit</button>
+            </footer>
+
+            <footer id="foot2">
+                <button>Done</button>
+            </footer>
+
+            <footer id="foot3">
+                <button>Cancel</button>
+                <button>Delete</button>
+            </footer>
+
+            <div id="addCont">
+                <input type="text" name="add">
+                <button>Add</button>
+                <button>Done</button>
+            </div>
+            <!-- End of task heading section -->
+        </section>
+
+        <section id="particularTask">
+            <!-- Particular task section -->
+            <header>
+
+            </header>
+
+            <textarea name="txtarea" id="text_area" cols="60" rows="20" ></textarea>
+
+            <ul id="pulLi">
+                <!-- <li>Hii</li> -->
+            </ul>
+
+            <footer id="footP1">
+                    <button>Edit</button>
+                    <button>Back</button>
+                </footer>
+
+            <footer id="footP2">
+                    <button>Done</button>
+            </footer>
+
+
+            <!-- End of Particular task section -->
+        </section>
+
+    </main>
+    <!-- end of dashboard section -->
+
+<!-- Dashboard pard ends -------------------------------------------------------------------------->
+
+<!-- Edit Personal Info Section -->
+    <section id="personal_info_sec">
+        <div id="edit_section">
+
+            <div class = "edit_div">
+                First Name:<br>
+                <span class="edit_conf"></span>    <input type="text" class="save_conf"><br>
+            </div>
+    
+            <div class = "edit_div">
+                Last Name: <br>
+                <span class="edit_conf"></span>    <input type="text" class="save_conf"><br>
+            </div>
+    
+            <div class = "edit_div">
+                Password: <br>
+                <span class="edit_conf"></span>    <input type="password" class="save_conf">
+            </div>
+    
+            <div class="edit_conf edit_div" id="edit_btns">
+                <button>Back</button>
+                <button>Edit</button>
+            </div>
+            <div class="save_conf edit_div" id="save_btns">
+                <button>Back</button>
+                <button>Save</button>
+            </div>
+    
+        </div>
+    
+        <div id="confirm_section">
+            <p id="confirm_sec_comp"></p>
+            <hr>
+            <div>
+                Old Password: <br>
+                <input type="password"> <br>
+            </div>
+    
+            <div>
+                <button>Back</button>
+                <button>Confirm</button>
+            </div>
+    
+        </div>
+    
+    </section>
+<!-- End of Personal info section -->
+
+    <!-- Addition of Js script -->
+    <script src="nw.js"></script>
+
+</body>
+</html>
