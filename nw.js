@@ -1,3 +1,77 @@
+// using template literals
+const dashbord_sec = document.querySelector('#dashBoardSec');
+
+const Delete_ = 'Delete';
+const Add_ = 'Add';
+const Edit_ = 'Edit';
+const Done_ = 'Done';
+const Cancel_ = 'Cancel';
+const Back_ = 'Back';
+
+let section1_of_main = `
+    <section id="taskHeadings">
+    <!-- Task Heading Section -->
+    <header>
+        Your Tasks:
+    </header>
+
+    <ol>
+    </ol>
+
+    <footer id="foot1">
+        <button>+</button>
+        <button>${Delete_}</button>
+        <button>${Edit_}</button>
+    </footer>
+
+    <footer id="foot2">
+        <button>${Done_}</button>
+    </footer>
+
+    <footer id="foot3">
+        <button>${Cancel_}</button>
+        <button>${Delete_}</button>
+    </footer>
+
+    <div id="addCont">
+        <input type="text" name="add">
+        <button>${Add_}</button>
+        <button>${Done_}</button>
+    </div>
+    <!-- End of task heading section -->
+    </section> `;
+
+let section2_of_main = `
+    <section id="particularTask">
+        <!-- Particular task section -->
+        <header>
+
+        </header>
+
+        <textarea name="txtarea" id="text_area" cols="60" rows="20" ></textarea>
+
+        <ul id="pulLi">
+            <!-- <li>Hii</li> -->
+        </ul>
+
+        <footer id="footP1">
+                <button>${Edit_}</button>
+                <button>${Back_}</button>
+            </footer>
+
+        <footer id="footP2">
+                <button>${Done_}</button>
+        </footer>
+
+
+        <!-- End of Particular task section -->
+    </section> `;
+
+    dashbord_sec.innerHTML = section1_of_main + '\n' + section2_of_main;
+
+// end of using template literals
+
+
 //------------------------------------------------------------------------------------------------
 // first form(login form with sign up option)
 const login_form = document.forms['first_form'];
@@ -7,7 +81,7 @@ const sign_upBtn = document.querySelector('#signup');
 //signup form and dashboard element
 const sign_up_form = document.forms['sign_up_form'];
 const sign_back = document.querySelector('#sign_back');// back button in signup form
-const dashbord_sec = document.querySelector('#dashBoardSec');
+
 const header_bar = document.querySelector('#headerBar');
 
 //=====================================================================================================
